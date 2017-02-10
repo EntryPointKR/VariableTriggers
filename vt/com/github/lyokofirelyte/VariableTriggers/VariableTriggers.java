@@ -9,6 +9,7 @@ import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
 import com.github.lyokofirelyte.VariableTriggers.Manager.VaultHook;
 import com.github.lyokofirelyte.VariableTriggers.Utils.FWTools;
 import com.github.lyokofirelyte.VariableTriggers.Utils.FancyLogging;
+import com.github.lyokofirelyte.VariableTriggers.Utils.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -60,6 +61,8 @@ public class VariableTriggers extends JavaPlugin {
         event(new VTSystemEvent(VTData.ENABLE));
         hook();
         logger.safeWarning("VTV2 is ready.");
+
+        new Metrics(this);
     }
 
     @Override

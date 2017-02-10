@@ -1,8 +1,8 @@
-name: VariableTriggers
+name: VariableTriggers-Backport
 version: 2
 prefix: VTV2
 main: com.github.lyokofirelyte.VariableTriggers.VariableTriggers
-author: Lyoko Firelyte
+author: [Lyoko Firelyte, EntryPoint]
 
 softdepend:
   - Vault
