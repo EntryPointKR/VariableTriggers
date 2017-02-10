@@ -103,8 +103,8 @@ public class VTParser {
             } catch (Exception e) {
                 e.printStackTrace();
                 main.logger.warning("Failed to parse the entire line @ " + scriptName + " (" + line + ")");
-                line++;
             }
+            line++;
         }
     }
 
