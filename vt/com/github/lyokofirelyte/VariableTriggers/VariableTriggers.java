@@ -64,6 +64,7 @@ public class VariableTriggers extends JavaPlugin {
         event(new VTSystemEvent(VTData.ENABLE));
         hook();
         logger.safeWarning("VTV2 is ready.");
+        logger.safeWarning("Recorded by EntryPoint");
 
         new Metrics(this);
     }
