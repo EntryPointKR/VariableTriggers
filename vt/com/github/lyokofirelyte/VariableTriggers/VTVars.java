@@ -1,6 +1,7 @@
 package com.github.lyokofirelyte.VariableTriggers;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 
 public class VTVars extends VTMap<Object, Object> {
 
@@ -8,7 +9,7 @@ public class VTVars extends VTMap<Object, Object> {
 
     public VTVars(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/system", "vars.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/system", "vars.yml");
         load();
     }
 

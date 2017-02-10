@@ -438,7 +438,7 @@ public class VTCommandMain implements AR {
 
                 if (!main.vars.getScripts().containsKey(args[1] + "_" + args[2])) {
 
-                    File file = new File("./plugins/VariableTriggers/scripts/" + args[1] + ".script.yml");
+                    File file = new File(VTUtils.getDataFolder(), "scripts/" + args[1] + ".script.yml");
                     YamlConfiguration yaml = new YamlConfiguration();
 
                     if (!file.exists()) {

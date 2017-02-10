@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.System;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.Bukkit;
@@ -15,7 +16,7 @@ public class SystemTimer extends VTMap<Object, Object> implements AR, Runnable {
 
     public SystemTimer(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "SystemTimer.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "SystemTimer.yml");
         load();
     }
 

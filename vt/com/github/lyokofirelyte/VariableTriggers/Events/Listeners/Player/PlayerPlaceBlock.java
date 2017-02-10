@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -16,7 +17,7 @@ public class PlayerPlaceBlock extends VTMap<Object, Object> implements AR {
 
     public PlayerPlaceBlock(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerPlaceBlock.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerPlaceBlock.yml");
         load();
     }
 

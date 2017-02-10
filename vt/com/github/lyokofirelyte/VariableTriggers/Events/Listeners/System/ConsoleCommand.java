@@ -18,7 +18,7 @@ public class ConsoleCommand extends VTMap<Object, Object> implements AR {
 
     public ConsoleCommand(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "ConsoleCommand.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "ConsoleCommand.yml");
         load();
     }
 

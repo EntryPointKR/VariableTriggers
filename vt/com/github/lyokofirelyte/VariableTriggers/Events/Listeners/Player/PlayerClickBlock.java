@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -17,7 +18,7 @@ public class PlayerClickBlock extends VTMap<Object, Object> implements AR {
 
     public PlayerClickBlock(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerClickBlock.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerClickBlock.yml");
         load();
     }
 

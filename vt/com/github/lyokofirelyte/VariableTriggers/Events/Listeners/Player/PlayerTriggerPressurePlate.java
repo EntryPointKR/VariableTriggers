@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -17,7 +18,7 @@ public class PlayerTriggerPressurePlate extends VTMap<Object, Object> implements
 
     public PlayerTriggerPressurePlate(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerTriggerPressurePlate.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerTriggerPressurePlate.yml");
         load();
     }
 

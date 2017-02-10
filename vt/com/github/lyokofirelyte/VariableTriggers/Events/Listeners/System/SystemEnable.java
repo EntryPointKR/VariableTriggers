@@ -4,6 +4,7 @@ import com.github.lyokofirelyte.VariableTriggers.Events.VTSystemEvent;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTData;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -16,7 +17,7 @@ public class SystemEnable extends VTMap<Object, Object> implements AR {
 
     public SystemEnable(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "SystemEnable.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "SystemEnable.yml");
         load();
     }
 

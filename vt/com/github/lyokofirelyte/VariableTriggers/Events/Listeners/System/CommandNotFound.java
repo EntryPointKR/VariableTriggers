@@ -3,6 +3,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.System;
 import com.github.lyokofirelyte.VariableTriggers.Events.CommandNotFoundEvent;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -15,7 +16,7 @@ public class CommandNotFound extends VTMap<Object, Object> implements AR {
 
     public CommandNotFound(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "CommandNotFound.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "CommandNotFound.yml");
         load();
     }
 

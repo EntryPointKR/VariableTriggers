@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.enchantments.Enchantment;
@@ -17,7 +18,7 @@ public class PlayerDropItem extends VTMap<Object, Object> implements AR {
 
     public PlayerDropItem(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerDropItem.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerDropItem.yml");
         load();
     }
 

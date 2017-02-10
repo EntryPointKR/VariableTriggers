@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.entity.Player;
@@ -17,7 +18,7 @@ public class PlayerDeath extends VTMap<Object, Object> implements AR {
 
     public PlayerDeath(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerDeath.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerDeath.yml");
         load();
     }
 

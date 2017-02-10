@@ -4,6 +4,7 @@ import com.github.lyokofirelyte.VariableTriggers.Events.VTSystemEvent;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTData;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -16,7 +17,7 @@ public class SystemDisable extends VTMap<Object, Object> implements AR {
 
     public SystemDisable(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "SystemDisable.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "SystemDisable.yml");
         load();
     }
 

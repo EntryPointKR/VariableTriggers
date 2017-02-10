@@ -3,6 +3,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.System;
 import com.github.lyokofirelyte.VariableTriggers.Commands.VTCommandMain;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.Bukkit;
@@ -16,7 +17,7 @@ public class SystemAutoSave extends VTMap<Object, Object> implements AR, Runnabl
 
     public SystemAutoSave(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/system", "SystemAutoSave.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/system", "SystemAutoSave.yml");
         load();
     }
 

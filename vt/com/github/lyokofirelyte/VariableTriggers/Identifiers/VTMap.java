@@ -1,5 +1,6 @@
 package com.github.lyokofirelyte.VariableTriggers.Identifiers;
 
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -293,7 +294,7 @@ public class VTMap<K, V> extends HashMap<Object, Object> {
                 for (String script : getScripts().keySet()) {
 
                     if (file == null || !yamls.containsKey(script.split("_")[0])) {
-                        file = new File("./plugins/VariableTriggers/scripts/" + script.split("_")[0] + ".script.yml");
+                        file = new File(VTUtils.getDataFolder(), "scripts/" + script.split("_")[0] + ".script.yml");
                         scriptYaml = YamlConfiguration.loadConfiguration(file);
                         yamls.put(script.split("_")[0], scriptYaml);
                         files.put(script.split("_")[0], file);

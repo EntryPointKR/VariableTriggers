@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.enchantments.Enchantment;
@@ -17,7 +18,7 @@ public class ItemDespawn extends VTMap<Object, Object> implements AR {
 
     public ItemDespawn(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "ItemDespawn.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "ItemDespawn.yml");
         load();
     }
 

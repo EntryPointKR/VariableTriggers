@@ -17,6 +17,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -378,5 +379,9 @@ public class VTUtils implements AR {
             }
         }
         return entities;
+    }
+
+    public static File getDataFolder() {
+        return VariableTriggers.inst.getDataFolder();
     }
 }

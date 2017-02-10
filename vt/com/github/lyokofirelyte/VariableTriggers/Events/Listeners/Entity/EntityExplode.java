@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.Location;
@@ -17,7 +18,7 @@ public class EntityExplode extends VTMap<Object, Object> implements AR {
 
     public EntityExplode(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityExplode.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "EntityExplode.yml");
         load();
     }
 

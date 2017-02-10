@@ -476,7 +476,7 @@ public class VTParser {
 
                 case "@OPENINV":
 
-                    File invFile = new File("./plugins/VariableTriggers/inventories/" + args[1] + ".yml");
+                    File invFile = new File(VTUtils.getDataFolder(), "inventories/" + args[1] + ".yml");
 
                     if (invFile.exists()) {
 

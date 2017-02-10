@@ -19,15 +19,17 @@ public class PlayerCommand extends VTMap<Object, Object> implements AR {
 
     public PlayerCommand(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerCommand.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerCommand.yml");
         load();
     }
 
     @EventHandler(ignoreCancelled = false)
     public void onCmd(PlayerCommandPreprocessEvent e) {
-
-        String path = e.getMessage().replaceFirst("\\/", "");
-        path = path.split(" ")[0];
+        String msg = e.getMessage();
+        String path = msg.substring(1, msg.length());
+        if (msg.contains(" ")) {
+            path = path.substring(0, msg.indexOf(' '));
+        }
 
         if (!containsKey(path + ".Script")) {
 

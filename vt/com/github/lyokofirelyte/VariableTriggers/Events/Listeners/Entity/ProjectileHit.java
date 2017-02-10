@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.entity.Entity;
@@ -18,7 +19,7 @@ public class ProjectileHit extends VTMap<Object, Object> implements AR {
 
     public ProjectileHit(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "ProjectileHit.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "ProjectileHit.yml");
         load();
     }
 

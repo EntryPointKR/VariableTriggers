@@ -14,6 +14,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.event.Event;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
@@ -21,6 +22,8 @@ import java.util.List;
 import java.util.Map;
 
 public class VariableTriggers extends JavaPlugin {
+
+    public static Plugin inst;
 
     static final String WRITE_OBJECT_SQL = "INSERT INTO java_objects(name, object_value) VALUES (?, ?)";
     public VTSetup setup;
@@ -39,7 +42,7 @@ public class VariableTriggers extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+        inst = this;
         try {
             getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         } catch (Exception e) {

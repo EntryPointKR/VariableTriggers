@@ -3,6 +3,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -16,7 +17,7 @@ public class PlayerFlight extends VTMap<Object, Object> implements AR {
 
     public PlayerFlight(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerFlight.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerFlight.yml");
         load();
     }
 

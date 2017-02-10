@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -15,7 +16,7 @@ public class EntitySpawn extends VTMap<Object, Object> implements AR {
 
     public EntitySpawn(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntitySpawn.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "EntitySpawn.yml");
         load();
     }
 

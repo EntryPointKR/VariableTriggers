@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.event.EventHandler;
@@ -15,7 +16,7 @@ public class NoteblockPlay extends VTMap<Object, Object> implements AR {
 
     public NoteblockPlay(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "NoteblockPlay.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "NoteblockPlay.yml");
         load();
     }
 

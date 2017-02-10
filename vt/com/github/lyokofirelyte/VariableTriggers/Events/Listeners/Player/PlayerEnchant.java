@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Player;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.enchantments.Enchantment;
@@ -17,7 +18,7 @@ public class PlayerEnchant extends VTMap<Object, Object> implements AR {
 
     public PlayerEnchant(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerEnchant.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/player", "PlayerEnchant.yml");
         load();
     }
 

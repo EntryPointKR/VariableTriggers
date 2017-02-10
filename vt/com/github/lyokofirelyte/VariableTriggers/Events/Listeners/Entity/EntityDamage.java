@@ -2,6 +2,7 @@ package com.github.lyokofirelyte.VariableTriggers.Events.Listeners.Entity;
 
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.AR;
 import com.github.lyokofirelyte.VariableTriggers.Identifiers.VTMap;
+import com.github.lyokofirelyte.VariableTriggers.Utils.VTUtils;
 import com.github.lyokofirelyte.VariableTriggers.VTParser;
 import com.github.lyokofirelyte.VariableTriggers.VariableTriggers;
 import org.bukkit.entity.Player;
@@ -16,7 +17,7 @@ public class EntityDamage extends VTMap<Object, Object> implements AR {
 
     public EntityDamage(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityDamage.yml");
+        makePath(VTUtils.getDataFolder().getPath() + "/events/entity", "EntityDamage.yml");
         load();
     }
 
