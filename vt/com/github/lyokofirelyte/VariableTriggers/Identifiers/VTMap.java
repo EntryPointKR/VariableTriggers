@@ -214,7 +214,7 @@ public class VTMap<K, V> extends HashMap<Object, Object> {
             try {
                 return (String) i.getClass().getMethod("s").invoke(null);
             } catch (Exception e) {
-                return ((Enum) i).toString();
+                return i.toString();
             }
         }
         return i.toString();

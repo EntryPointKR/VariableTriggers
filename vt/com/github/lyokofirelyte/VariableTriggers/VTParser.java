@@ -1596,7 +1596,7 @@ public class VTParser {
             case "isflying":
                 return p.isFlying() + "";
             case "health":
-                return ((Damageable) p).getHealth() + "";
+                return p.getHealth() + "";
             case "gamemode":
                 return p.getGameMode().name();
             case "triggerloc":
@@ -1701,9 +1701,9 @@ public class VTParser {
                         case "maxhealth":
 
                             if (args.length == 1) {
-                                arg = r(arg, curr, (p != null ? (args[0].equals("health") ? ((Damageable) p).getHealth() : ((Damageable) p).getMaxHealth()) : 0) + "");
+                                arg = r(arg, curr, (p != null ? (args[0].equals("health") ? p.getHealth() : p.getMaxHealth()) : 0) + "");
                             } else if (args.length == 2) {
-                                arg = r(arg, curr, (Bukkit.getPlayer(args[1]) != null ? (args[0].equals("health") ? ((Damageable) Bukkit.getPlayer(args[1])).getHealth() : ((Damageable) Bukkit.getPlayer(args[1])).getMaxHealth()) : 0) + "");
+                                arg = r(arg, curr, (Bukkit.getPlayer(args[1]) != null ? (args[0].equals("health") ? Bukkit.getPlayer(args[1]).getHealth() : Bukkit.getPlayer(args[1]).getMaxHealth()) : 0) + "");
                             }
 
                             break;

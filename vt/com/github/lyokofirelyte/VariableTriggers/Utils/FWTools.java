@@ -37,7 +37,7 @@ public class FWTools {
 
     public void playFirework(World world, Location loc, FireworkEffect fe) throws Exception {
 
-        Firework fw = (Firework) world.spawn(loc, Firework.class);
+        Firework fw = world.spawn(loc, Firework.class);
         Object nms_world = null;
         Object nms_firework = null;
 
@@ -53,13 +53,13 @@ public class FWTools {
             nms_world_broadcastEntityEffect = getMethod(nms_world.getClass(), "broadcastEntityEffect");
         }
 
-        FireworkMeta data = (FireworkMeta) fw.getFireworkMeta();
+        FireworkMeta data = fw.getFireworkMeta();
         data.clearEffects();
         data.setPower(1);
         data.addEffect(fe);
         data.addEnchant(Enchantment.DURABILITY, 10, false);
         fw.setFireworkMeta(data);
-        nms_world_broadcastEntityEffect.invoke(nms_world, new Object[]{nms_firework, (byte) 17});
+        nms_world_broadcastEntityEffect.invoke(nms_world, nms_firework, (byte) 17);
         fw.remove();
     }
 

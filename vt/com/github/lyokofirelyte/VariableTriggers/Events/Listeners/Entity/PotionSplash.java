@@ -49,7 +49,7 @@ public class PotionSplash extends VTMap<Object, Object> implements AR {
         ItemStack i = e.getPotion().getItem();
         int x = 0;
 
-        map.put("<thrower>", ((Entity) e.getPotion().getShooter()).getType().name().toLowerCase());
+        map.put("<thrower>", e.getPotion().getShooter().getType().name().toLowerCase());
         map.put("<affectedentity:amount>", e.getAffectedEntities().size() + "");
         map.put("<potion:effect:amount>", e.getPotion().getEffects().size() + "");
 

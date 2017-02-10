@@ -70,7 +70,7 @@ public class VTRegistry implements CommandExecutor {
                             if (m.getAnnotation(VTCommand.class) != null && Arrays.asList(m.getAnnotation(VTCommand.class).aliases()).contains(command)) {
                                 try {
                                     VTCommand anno = m.getAnnotation(VTCommand.class);
-                                    if ((sender instanceof Player && (((Player) sender).hasPermission(anno.perm())) || sender instanceof Player == false || sender.isOp())) {
+                                    if ((sender instanceof Player && (sender.hasPermission(anno.perm())) || sender instanceof Player == false || sender.isOp())) {
                                         if (args.length > anno.max() || args.length < anno.min()) {
                                             VTUtils.s(sender, anno.help());
                                             return true;
@@ -78,7 +78,7 @@ public class VTRegistry implements CommandExecutor {
                                         if (anno.name().equals("none")) {
                                             if (anno.player()) {
                                                 if (sender instanceof Player) {
-                                                    m.invoke(obj, (Player) sender, args);
+                                                    m.invoke(obj, sender, args);
                                                 } else {
                                                     VTUtils.s(sender, "&cConsole players cannot run this command!");
                                                 }
@@ -88,7 +88,7 @@ public class VTRegistry implements CommandExecutor {
                                         } else {
                                             if (anno.player()) {
                                                 if (sender instanceof Player) {
-                                                    m.invoke(obj, (Player) sender, args, label);
+                                                    m.invoke(obj, sender, args, label);
                                                 } else {
                                                     VTUtils.s(sender, "&cConsole players cannot run this command!");
                                                 }

@@ -40,9 +40,9 @@ public class ProjectileHit extends VTMap<Object, Object> implements AR {
 
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("<projectile>", e.getEntity().getType().name().toLowerCase());
-        map.put("<projectileshooter>", ((Entity) e.getEntity().getShooter()).getType().name().toLowerCase());
+        map.put("<projectileshooter>", e.getEntity().getShooter().getType().name().toLowerCase());
 
-        if (((Entity) e.getEntity().getShooter()).getType().equals(EntityType.PLAYER)) {
+        if (e.getEntity().getShooter().getType().equals(EntityType.PLAYER)) {
             map.put("<projectileshootername>", ((Player) e.getEntity().getShooter()).getName());
         }
 

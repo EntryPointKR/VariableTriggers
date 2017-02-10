@@ -103,7 +103,7 @@ public class VariableTriggers extends JavaPlugin {
 	}*/
 
     public void event(Event e) {
-        Bukkit.getPluginManager().callEvent((Event) e);
+        Bukkit.getPluginManager().callEvent(e);
     }
 
     public boolean perms(CommandSender cs, String perm) {

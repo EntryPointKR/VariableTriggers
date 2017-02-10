@@ -8,19 +8,19 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.METHOD)
 public @interface VTCommand {
-    public String[] aliases();
+    String[] aliases();
 
-    public String name() default "none";
+    String name() default "none";
 
-    public String desc() default "A VT Command";
+    String desc() default "A VT Command";
 
-    public String help() default "/vt ?";
+    String help() default "/vt ?";
 
-    public String perm() default "vtriggers.use";
+    String perm() default "vtriggers.use";
 
-    public boolean player() default false;
+    boolean player() default false;
 
-    public int max() default 9999;
+    int max() default 9999;
 
-    public int min() default 0;
+    int min() default 0;
 }
