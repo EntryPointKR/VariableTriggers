@@ -17,7 +17,7 @@ public class PlayerClickAir extends VTMap<Object, Object> implements AR {
 
     public PlayerClickAir(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerClickAir.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerClickAir.yml");
         load();
     }
 

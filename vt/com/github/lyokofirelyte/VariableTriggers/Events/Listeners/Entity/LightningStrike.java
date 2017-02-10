@@ -15,7 +15,7 @@ public class LightningStrike extends VTMap<Object, Object> implements AR {
 
     public LightningStrike(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "LightningStrike.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "LightningStrike.yml");
         load();
     }
 

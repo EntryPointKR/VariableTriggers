@@ -15,7 +15,7 @@ public class PlayerHoldItem extends VTMap<Object, Object> implements AR {
 
     public PlayerHoldItem(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerHoldItem.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerHoldItem.yml");
         load();
     }
 

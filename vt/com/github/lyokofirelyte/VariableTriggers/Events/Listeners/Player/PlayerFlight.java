@@ -16,7 +16,7 @@ public class PlayerFlight extends VTMap<Object, Object> implements AR {
 
     public PlayerFlight(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerFlight.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerFlight.yml");
         load();
     }
 

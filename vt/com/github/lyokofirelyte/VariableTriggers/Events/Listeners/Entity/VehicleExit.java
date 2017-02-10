@@ -16,7 +16,7 @@ public class VehicleExit extends VTMap<Object, Object> implements AR {
 
     public VehicleExit(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "VehicleExit.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "VehicleExit.yml");
         load();
     }
 

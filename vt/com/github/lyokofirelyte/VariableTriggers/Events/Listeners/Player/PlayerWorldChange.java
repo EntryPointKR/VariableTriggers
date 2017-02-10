@@ -15,7 +15,7 @@ public class PlayerWorldChange extends VTMap<Object, Object> implements AR {
 
     public PlayerWorldChange(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerWorldChange.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerWorldChange.yml");
         load();
     }
 

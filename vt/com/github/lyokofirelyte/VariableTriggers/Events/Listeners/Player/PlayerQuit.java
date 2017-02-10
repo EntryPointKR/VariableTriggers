@@ -15,7 +15,7 @@ public class PlayerQuit extends VTMap<Object, Object> implements AR {
 
     public PlayerQuit(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerQuit.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerQuit.yml");
         load();
     }
 

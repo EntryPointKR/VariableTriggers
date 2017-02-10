@@ -8,7 +8,7 @@ public class VTSettings extends VTMap<Object, Object> {
 
     public VTSettings(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/system", "settings.yml");
+        makePath("./plugins/VariableTriggers-Backport/system", "settings.yml");
         load();
     }
 

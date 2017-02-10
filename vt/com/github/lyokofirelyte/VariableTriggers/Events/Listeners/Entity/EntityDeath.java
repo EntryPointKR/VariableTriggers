@@ -15,7 +15,7 @@ public class EntityDeath extends VTMap<Object, Object> implements AR {
 
     public EntityDeath(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "EntityDeath.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityDeath.yml");
         load();
     }
 

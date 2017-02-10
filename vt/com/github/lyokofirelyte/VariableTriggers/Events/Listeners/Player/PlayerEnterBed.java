@@ -15,7 +15,7 @@ public class PlayerEnterBed extends VTMap<Object, Object> implements AR {
 
     public PlayerEnterBed(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerEnterBed.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerEnterBed.yml");
         load();
     }
 

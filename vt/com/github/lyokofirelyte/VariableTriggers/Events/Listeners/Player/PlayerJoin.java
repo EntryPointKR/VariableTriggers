@@ -15,7 +15,7 @@ public class PlayerJoin extends VTMap<Object, Object> implements AR {
 
     public PlayerJoin(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerJoin.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerJoin.yml");
         load();
     }
 

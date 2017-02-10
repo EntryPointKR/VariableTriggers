@@ -8,7 +8,7 @@ public class VTVars extends VTMap<Object, Object> {
 
     public VTVars(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/system", "vars.yml");
+        makePath("./plugins/VariableTriggers-Backport/system", "vars.yml");
         load();
     }
 

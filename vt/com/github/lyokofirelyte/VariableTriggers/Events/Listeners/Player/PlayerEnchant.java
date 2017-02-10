@@ -17,7 +17,7 @@ public class PlayerEnchant extends VTMap<Object, Object> implements AR {
 
     public PlayerEnchant(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerEnchant.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerEnchant.yml");
         load();
     }
 

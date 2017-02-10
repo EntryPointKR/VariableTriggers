@@ -15,7 +15,7 @@ public class PlayerRespawn extends VTMap<Object, Object> implements AR {
 
     public PlayerRespawn(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerRespawn.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerRespawn.yml");
         load();
     }
 

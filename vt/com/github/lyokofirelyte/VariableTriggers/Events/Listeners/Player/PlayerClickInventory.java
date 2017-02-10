@@ -17,7 +17,7 @@ public class PlayerClickInventory extends VTMap<Object, Object> implements AR {
 
     public PlayerClickInventory(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerClickInventory.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerClickInventory.yml");
         load();
     }
 

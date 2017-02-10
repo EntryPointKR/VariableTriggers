@@ -17,7 +17,7 @@ public class PlayerDropItem extends VTMap<Object, Object> implements AR {
 
     public PlayerDropItem(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerDropItem.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerDropItem.yml");
         load();
     }
 

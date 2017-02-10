@@ -17,7 +17,7 @@ public class PlayerDeath extends VTMap<Object, Object> implements AR {
 
     public PlayerDeath(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerDeath.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerDeath.yml");
         load();
     }
 

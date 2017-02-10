@@ -15,7 +15,7 @@ public class PlayerChat extends VTMap<Object, Object> implements AR {
 
     public PlayerChat(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerChat.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerChat.yml");
         load();
     }
 

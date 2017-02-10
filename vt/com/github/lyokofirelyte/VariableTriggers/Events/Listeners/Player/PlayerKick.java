@@ -15,7 +15,7 @@ public class PlayerKick extends VTMap<Object, Object> implements AR {
 
     public PlayerKick(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerKick.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerKick.yml");
         load();
     }
 

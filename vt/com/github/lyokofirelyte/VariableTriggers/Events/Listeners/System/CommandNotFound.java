@@ -15,7 +15,7 @@ public class CommandNotFound extends VTMap<Object, Object> implements AR {
 
     public CommandNotFound(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/system", "CommandNotFound.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/system", "CommandNotFound.yml");
         load();
     }
 

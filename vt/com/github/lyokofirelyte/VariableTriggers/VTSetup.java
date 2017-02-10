@@ -51,15 +51,15 @@ public class VTSetup {
         main.vars = new VTVars(main);
 
         main.clicks = new VTMap<Object, Object>();
-        main.clicks.makePath("./plugins/VariableTriggers/events/triggers", "ClickTriggers.yml");
+        main.clicks.makePath("./plugins/VariableTriggers-Backport/events/triggers", "ClickTriggers.yml");
         main.clicks.load();
 
         main.areas = new VTMap<Object, Object>();
-        main.areas.makePath("./plugins/VariableTriggers/events/triggers", "AreaTriggers.yml");
+        main.areas.makePath("./plugins/VariableTriggers-Backport/events/triggers", "AreaTriggers.yml");
         main.areas.load();
 
         main.walks = new VTMap<Object, Object>();
-        main.walks.makePath("./plugins/VariableTriggers/events/triggers", "WalkTriggers.yml");
+        main.walks.makePath("./plugins/VariableTriggers-Backport/events/triggers", "WalkTriggers.yml");
         main.walks.load();
 
         if (!main.settings.getBool(VTConfig.FIRST_RUN)) {

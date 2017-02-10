@@ -17,7 +17,7 @@ public class ItemSpawn extends VTMap<Object, Object> implements AR {
 
     public ItemSpawn(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "ItemSpawn.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "ItemSpawn.yml");
         load();
     }
 

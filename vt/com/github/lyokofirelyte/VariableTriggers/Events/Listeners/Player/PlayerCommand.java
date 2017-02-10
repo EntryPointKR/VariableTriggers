@@ -19,7 +19,7 @@ public class PlayerCommand extends VTMap<Object, Object> implements AR {
 
     public PlayerCommand(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerCommand.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerCommand.yml");
         load();
     }
 

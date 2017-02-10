@@ -15,7 +15,7 @@ public class NoteblockPlay extends VTMap<Object, Object> implements AR {
 
     public NoteblockPlay(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "NoteblockPlay.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "NoteblockPlay.yml");
         load();
     }
 

@@ -15,7 +15,7 @@ public class PlayerSprint extends VTMap<Object, Object> implements AR {
 
     public PlayerSprint(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerSprint.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerSprint.yml");
         load();
     }
 

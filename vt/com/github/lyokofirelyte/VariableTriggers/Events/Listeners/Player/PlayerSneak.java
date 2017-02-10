@@ -15,7 +15,7 @@ public class PlayerSneak extends VTMap<Object, Object> implements AR {
 
     public PlayerSneak(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerSneak.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerSneak.yml");
         load();
     }
 

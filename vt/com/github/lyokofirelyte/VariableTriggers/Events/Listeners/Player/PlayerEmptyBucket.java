@@ -16,7 +16,7 @@ public class PlayerEmptyBucket extends VTMap<Object, Object> implements AR {
 
     public PlayerEmptyBucket(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerEmptyBucket.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerEmptyBucket.yml");
         load();
     }
 

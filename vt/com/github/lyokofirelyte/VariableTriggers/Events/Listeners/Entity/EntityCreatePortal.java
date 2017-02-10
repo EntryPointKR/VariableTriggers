@@ -15,7 +15,7 @@ public class EntityCreatePortal extends VTMap<Object, Object> implements AR {
 
     public EntityCreatePortal(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "EntityCreatePortal.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityCreatePortal.yml");
         load();
     }
 

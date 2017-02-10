@@ -18,7 +18,7 @@ public class ProjectileHit extends VTMap<Object, Object> implements AR {
 
     public ProjectileHit(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "ProjectileHit.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "ProjectileHit.yml");
         load();
     }
 

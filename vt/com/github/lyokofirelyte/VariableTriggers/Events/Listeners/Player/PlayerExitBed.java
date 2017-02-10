@@ -15,7 +15,7 @@ public class PlayerExitBed extends VTMap<Object, Object> implements AR {
 
     public PlayerExitBed(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerExitBed.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerExitBed.yml");
         load();
     }
 

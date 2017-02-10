@@ -17,7 +17,7 @@ public class PlayerClickBlock extends VTMap<Object, Object> implements AR {
 
     public PlayerClickBlock(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerClickBlock.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerClickBlock.yml");
         load();
     }
 

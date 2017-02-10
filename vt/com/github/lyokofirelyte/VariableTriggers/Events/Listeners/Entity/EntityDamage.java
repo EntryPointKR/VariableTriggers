@@ -16,7 +16,7 @@ public class EntityDamage extends VTMap<Object, Object> implements AR {
 
     public EntityDamage(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "EntityDamage.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityDamage.yml");
         load();
     }
 

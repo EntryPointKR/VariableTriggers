@@ -17,7 +17,7 @@ public class EntityExplode extends VTMap<Object, Object> implements AR {
 
     public EntityExplode(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "EntityExplode.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "EntityExplode.yml");
         load();
     }
 

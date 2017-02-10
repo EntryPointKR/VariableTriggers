@@ -18,7 +18,7 @@ public class ServerListPing extends VTMap<Object, Object> implements AR {
 
     public ServerListPing(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/system", "ServerListPing.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/system", "ServerListPing.yml");
         load();
     }
 

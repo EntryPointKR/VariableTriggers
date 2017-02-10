@@ -17,7 +17,7 @@ public class ItemDespawn extends VTMap<Object, Object> implements AR {
 
     public ItemDespawn(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "ItemDespawn.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "ItemDespawn.yml");
         load();
     }
 

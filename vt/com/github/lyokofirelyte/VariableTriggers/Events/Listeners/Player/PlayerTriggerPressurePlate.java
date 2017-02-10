@@ -17,7 +17,7 @@ public class PlayerTriggerPressurePlate extends VTMap<Object, Object> implements
 
     public PlayerTriggerPressurePlate(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/player", "PlayerTriggerPressurePlate.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/player", "PlayerTriggerPressurePlate.yml");
         load();
     }
 

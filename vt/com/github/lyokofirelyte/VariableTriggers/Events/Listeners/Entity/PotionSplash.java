@@ -22,7 +22,7 @@ public class PotionSplash extends VTMap<Object, Object> implements AR {
 
     public PotionSplash(VariableTriggers i) {
         main = i;
-        makePath("./plugins/VariableTriggers/events/entity", "PotionSplash.yml");
+        makePath("./plugins/VariableTriggers-Backport/events/entity", "PotionSplash.yml");
         load();
     }
 
